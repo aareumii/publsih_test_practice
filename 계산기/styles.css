@@ -1,0 +1,58 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f7f7f7;
+}
+
+.calculator {
+	display: grid;
+	gap: 10px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-screen {
+	width: 95%;
+	height: 50px;
+	border: none;
+	background-color: #252525;
+	color: white;
+	text-align: right;
+	padding: 10px;
+	font-size: 1.5em;
+	border-radius: 5px;
+}
+
+.calculator-keys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+button {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 5px;
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+}
+
+button[value='='] {
+	background-color: #2196f3;
+	grid-column: span 2;
+}
+
+button[value='C'] {
+	background-color: #f44336;
+	grid-column: span 2;
+}
+
+button.operator {
+	background-color: #ff9800;
+}
